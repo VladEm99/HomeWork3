@@ -3,6 +3,8 @@
 public class Main {
     public static void main(String[] args) {
 
+        Figure fisrtFigure = new Figure();
+        Figure secondFigure = new Figure(12.5, 45.5, 89.1);
         Car firstCar = new Car();
         Calculator calculator = new Calculator();
         NumberManipulator manipulator = new NumberManipulator();
@@ -29,5 +31,12 @@ public class Main {
         int decrementedNumber = manipulator.decrementByOne(number);
         System.out.println("initial number: " + number + "\n"
         + "Decremented number: " + decrementedNumber);
+
+        System.out.println("Volume of first figure: " + fisrtFigure.calculateVolume());
+        System.out.println("Volume of second figure: " + secondFigure.calculateVolume());
+        System.out.println("Area of first figure: " + fisrtFigure.calculateFigureArea());
+        System.out.println("Area of second figure: " + secondFigure.calculateFigureArea());
+
+
     }
 }
