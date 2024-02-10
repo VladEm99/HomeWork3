@@ -3,12 +3,11 @@ public class Figure {
     double width;
     double length;
 
-    public Figure() {
-        this.height = 10.5;
-        this.width = 15.3;
-        this.length = 55.6;
-    }
+    //а. Пустой (по умолчанию) - без входных параметров и без
+    //инициализации полей.
+    public Figure() {}
 
+    //б. С передачей входных значений: Высота , Ширина, Длина
     public Figure(double height, double width, double length) {
         this.height = height;
         this.width = width;

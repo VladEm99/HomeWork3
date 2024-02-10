@@ -5,8 +5,11 @@ public class Main {
 
         Figure fisrtFigure = new Figure();
         Figure secondFigure = new Figure(12.5, 45.5, 89.1);
+
         Car firstCar = new Car();
+
         Calculator calculator = new Calculator();
+
         NumberManipulator manipulator = new NumberManipulator();
 
 
@@ -16,9 +19,9 @@ public class Main {
 
         firstCar.startEngine();
         firstCar.stopEngine();
+
         System.out.println("Car brand: " + firstCar.brand + "\n" + "Model year: " + firstCar.year + "\n"
                 + "Car model: " + firstCar.model);
-
         System.out.println(calculator.addition(5, 8));
         System.out.println(calculator.isGreater(5.8, 6.7));
 
