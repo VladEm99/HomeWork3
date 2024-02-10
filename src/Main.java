@@ -3,15 +3,8 @@
 public class Main {
     public static void main(String[] args) {
 
-        Figure fisrtFigure = new Figure();
-        Figure secondFigure = new Figure(12.5, 45.5, 89.1);
-
+        //for Car
         Car firstCar = new Car();
-
-        Calculator calculator = new Calculator();
-
-        NumberManipulator manipulator = new NumberManipulator();
-
 
         firstCar.brand = "Audi";
         firstCar.model = "RS7";
@@ -22,18 +15,34 @@ public class Main {
 
         System.out.println("Car brand: " + firstCar.brand + "\n" + "Model year: " + firstCar.year + "\n"
                 + "Car model: " + firstCar.model);
+
+
+
+        //for Calculator
+        Calculator calculator = new Calculator();
+
         System.out.println(calculator.addition(5, 8));
         System.out.println(calculator.isGreater(5.8, 6.7));
 
+
+
+        //for NumberManipulator
+        NumberManipulator manipulator = new NumberManipulator();
         int number = 455;
 
         int incrementedNumber = manipulator.incrementByOne(number);
+        int decrementedNumber = manipulator.decrementByOne(number);
+
         System.out.println("initial number: " + number + "\n"
         + "Incremented number: " + incrementedNumber);
-
-        int decrementedNumber = manipulator.decrementByOne(number);
         System.out.println("initial number: " + number + "\n"
         + "Decremented number: " + decrementedNumber);
+
+
+
+        //for Figure
+        Figure fisrtFigure = new Figure();
+        Figure secondFigure = new Figure(12.5, 45.5, 89.1);
 
         System.out.println("Volume of first figure: " + fisrtFigure.calculateVolume());
         System.out.println("Volume of second figure: " + secondFigure.calculateVolume());
