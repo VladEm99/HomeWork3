@@ -5,7 +5,9 @@ public class Figure {
 
     //а. Пустой (по умолчанию) - без входных параметров и без
     //инициализации полей.
-    public Figure() {}
+    public Figure() {
+
+    }
 
     //б. С передачей входных значений: Высота , Ширина, Длина
     public Figure(double height, double width, double length) {
